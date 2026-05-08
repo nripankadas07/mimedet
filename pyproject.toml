@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mimedet"
+version = "0.1.0"
+description = "Pure-Python MIME-type detection from magic bytes — no libmagic dependency."
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Nripanka Das", email = "nripankadas@gmail.com" }]
+requires-python = ">=3.10"
+keywords = ["mime", "magic", "file-type", "signature", "detection", "libmagic"]
+classifiers = [
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: System :: Filesystems",
+  "Topic :: Utilities",
+  "Typing :: Typed",
+]
+
+[project.urls]
+Repository = "https://github.com/nripankadas07/mimedet"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+mimedet = ["py.typed"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.mypy]
+strict = true
