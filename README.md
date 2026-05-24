@@ -12,7 +12,7 @@ custom formats.
 ## Install
 
 ```bash
-pip install mimedet
+python -m pip install -e .
 ```
 
 Requires Python 3.10+.
