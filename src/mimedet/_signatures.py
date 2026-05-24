@@ -20,7 +20,7 @@ _MP4_BRANDS = {
     b"avc1",
     b"M4V ",
     b"M4A ",
-    b"M4" ",
+    b"M4B ",
     b"dash",
 }
 

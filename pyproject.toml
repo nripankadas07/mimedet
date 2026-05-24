@@ -25,6 +25,9 @@ classifiers = [
 [project.urls]
 Repository = "https://github.com/nripankadas07/mimedet"
 
+[tool.setuptools]
+package-dir = {"" = "src"}
+
 [tool.setuptools.packages.find]
 where = ["src"]
 
